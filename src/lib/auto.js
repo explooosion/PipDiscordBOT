@@ -40,14 +40,14 @@ module.exports.send = (bot, param) => {
     if (message.includes('奶')) {
         bot.sendMessage({
             to: channelID,
-            message: '有人提到奶子嗎! 😍😍😍'
+            message: '💕有人提到奶子嗎! 😍😍😍'
         });
     }
 
     if (message.includes('睡')) {
         bot.sendMessage({
             to: channelID,
-            message: '晚ㄤ~ 😴'
+            message: '📴 晚ㄤ~ 😴'
         });
     }
 
@@ -62,6 +62,34 @@ module.exports.send = (bot, param) => {
         bot.sendMessage({
             to: channelID,
             message: '工三小 🤬'
+        });
+    }
+
+    if (message.includes('失敗')) {
+        bot.sendMessage({
+            to: channelID,
+            message: 'GG 下次再來 👎'
+        });
+    }
+
+    if (message.includes('電話')) {
+        bot.sendMessage({
+            to: channelID,
+            message: '說好的打給我呢? 📳'
+        });
+    }
+
+    if (message.includes('GG') || message.includes('gg')) {
+        bot.sendMessage({
+            to: channelID,
+            message: 'GGGGGGGGG 😎'
+        });
+    }
+
+    if (message.includes('上車')) {
+        bot.sendMessage({
+            to: channelID,
+            message: '老實點! 每次掃黃都是你! 👮'
         });
     }
 }
