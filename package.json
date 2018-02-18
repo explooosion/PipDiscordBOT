@@ -4,7 +4,9 @@
   "description": "This is a pip bot",
   "main": "index.js",
   "scripts": {
-    "start": "node start.js"
+    "debug": "node start.js",
+    "dev": "./node_modules/.bin/nodemon start.js",
+    "start": "pm2 start start.js"
   },
   "keywords": [],
   "author": "Robby",
@@ -12,6 +14,8 @@
   "dependencies": {
     "discord.io": "github:woor/discord.io#gateway_v6",
     "dotenv": "^5.0.0",
+    "nodemon": "^1.15.0",
+    "pm2": "^2.9.3",
     "winston": "^2.4.0"
   },
   "devDependencies": {
