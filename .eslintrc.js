@@ -36,5 +36,6 @@ module.exports = {
         "eol-last": 0,
         "import/first": 0,
         "import/no-unresolved": 0,
+        "no-unneeded-ternary": 0,
     }
 };
