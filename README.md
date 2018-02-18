@@ -20,3 +20,37 @@ Chat bot for **Discord bot** .
 
 + [discord.io](https://github.com/izy521/discord.io)
 + [winston](https://github.com/winstonjs/winston)
+
+
+## Installation
+
+You can create bot to your server.
+
+```bash
+git clone https://github.com/explooosion/PipDiscordBOT.git
+```
+
+```bash
+cd PipDiscordBOT
+```
+
+```bash
+npm install
+```
+
+## Usage
+
+1. Copy file `.env.example` and rename to `.env`,  
+2. Set the `DISCORD_TOKEN` 
+
+```bash
+npm start
+```
+
+## Reference
+
++ [Tutorial: Creating a simple Discord Bot](https://medium.com/@renesansz/tutorial-creating-a-simple-discord-bot-9465a2764dc0)
+
++ [Gitbook - discord.io](https://izy521.gitbooks.io/discord-io/content/)
+
++ [reactiflux/discord-irc](https://github.com/reactiflux/discord-irc/wiki/Creating-a-discord-bot-&-getting-a-token)
