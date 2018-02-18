@@ -1,6 +1,6 @@
 import fs from 'fs';
 
-module.exports.messageByCmd = (bot, param) => {
+module.exports.send = (bot, param) => {
 
     const {
         user,
@@ -57,12 +57,9 @@ module.exports.messageByCmd = (bot, param) => {
 }
 
 function getAllMentions(mentions) {
-
     let tag = '';
-
     mentions.forEach(user => {
         tag += ` <@${user.id}>`;
     });
-
     return tag;
 }

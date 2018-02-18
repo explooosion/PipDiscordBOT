@@ -21,7 +21,6 @@ const bot = new Discord.Client({
     autorun: true
 });
 
-
 bot.on('ready', (evt) => {
     logger.info('Connected');
     logger.info('Logged in as: ');
@@ -31,7 +30,6 @@ bot.on('ready', (evt) => {
         idle_since: Date.now(),
         game: {
             name: '~! | To use',
-            url: 'https://github.com/explooosion/PipDiscordBOT'
         }
     });
 });
@@ -47,7 +45,9 @@ bot.on('message', (user, userID, channelID, message, evt) => {
     };
 
     if (message.substring(0, 2) === prefix) {
-        cmd.messageByCmd(bot, param);
+        cmd.send(bot, param);
+    } else {
+        auto.send(bot, param);
     }
 
 });
