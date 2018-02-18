@@ -1,6 +1,6 @@
 # PipDiscordBOT
 
-[Path of Exile](https://www.pathofexile.com/) Guild BOT
+Path of Exile Guild BOT
 
 ### **[╰ʕ •ᴥ•ʔ╮【良心商人】㊣正直公道最便宜都在這╭ʕ •ᴥ•ʔ╯<Crafty>](https://web.poe.garena.tw/guild/profile/119610)**
 
