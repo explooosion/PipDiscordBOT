@@ -92,6 +92,20 @@ module.exports.send = (bot, param) => {
             message: '老實點! 每次掃黃都是你! 👮'
         });
     }
+
+    if (message.includes('-1') || message.includes('-2')) {
+        bot.sendMessage({
+            to: channelID,
+            message: '快點就缺你了 😲'
+        });
+    }
+
+    if (message.includes('++')) {
+        bot.sendMessage({
+            to: channelID,
+            message: '+++++++++++++++++ 👺'
+        });
+    }
 }
 
 function randomEvent() {
