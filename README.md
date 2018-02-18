@@ -1,11 +1,12 @@
 # PipDiscordBOT
 
-**[╰ʕ •ᴥ•ʔ╮【良心商人】㊣正直公道最便宜都在這╭ʕ •ᴥ•ʔ╯
-<Crafty>](https://web.poe.garena.tw/guild/profile/119610)**
+[Path of Exile](https://www.pathofexile.com/) Guild BOT
+
+### **[╰ʕ •ᴥ•ʔ╮【良心商人】㊣正直公道最便宜都在這╭ʕ •ᴥ•ʔ╯<Crafty>](https://web.poe.garena.tw/guild/profile/119610)**
 
 Chat bot for **Discord bot** .
   
-![Imgur](https://i.imgur.com/RZP1rAx.png)
+<img src="https://i.imgur.com/RZP1rAx.png" width="150" height="150">
 
 ## Using the Pip Bot
 
