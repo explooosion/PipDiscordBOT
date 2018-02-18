@@ -36,6 +36,8 @@ bot.on('ready', (evt) => {
 
 bot.on('message', (user, userID, channelID, message, evt) => {
 
+    logger.info(`${user}(${userID}): ${message}`);
+
     const param = {
         user,
         userID,
