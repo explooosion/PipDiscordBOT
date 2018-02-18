@@ -1,0 +1,17 @@
+{
+  "name": "pip-bot",
+  "version": "1.0.0",
+  "description": "This is a pip bot",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "Robby",
+  "license": "ISC",
+  "dependencies": {
+    "discord.io": "github:woor/discord.io#gateway_v6",
+    "dotenv": "^5.0.0",
+    "winston": "^2.4.0"
+  }
+}
