@@ -21,10 +21,19 @@ const bot = new Discord.Client({
     autorun: true
 });
 
+
 bot.on('ready', (evt) => {
     logger.info('Connected');
     logger.info('Logged in as: ');
     logger.info(bot.username + ' - (' + bot.id + ')');
+
+    bot.setPresence({
+        idle_since: Date.now(),
+        game: {
+            name: '~! | To use',
+            url: 'https://github.com/explooosion/PipDiscordBOT'
+        }
+    });
 });
 
 bot.on('message', (user, userID, channelID, message, evt) => {
