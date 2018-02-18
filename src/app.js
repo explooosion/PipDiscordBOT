@@ -1,10 +1,9 @@
 require('dotenv').config();
 
-const Discord = require('discord.io');
-const logger = require('winston');
-
-const cmd = require('./lib/cmd');
-const auto = require('./lib/auto');
+import Discord from 'discord.io';
+import logger from 'winston';
+import cmd from './lib/cmd';
+import auto from './lib/auto';
 
 const prefix = '~!';
 
@@ -22,28 +21,24 @@ const bot = new Discord.Client({
     autorun: true
 });
 
-bot.on('ready', function (evt) {
+bot.on('ready', (evt) => {
     logger.info('Connected');
     logger.info('Logged in as: ');
     logger.info(bot.username + ' - (' + bot.id + ')');
 });
 
-bot.on('message', function (user, userID, channelID, message, evt) {
+bot.on('message', (user, userID, channelID, message, evt) => {
+
+    const param = {
+        user,
+        userID,
+        channelID,
+        message,
+        evt
+    };
 
     if (message.substring(0, 2) === prefix) {
-        cmd.messageByCmd(message);
-    } else {
-        auto.messageByAuto(message);
+        cmd.messageByCmd(bot, param);
     }
+
 });
-
-
-function getMentionUser(args) {
-    return String(args).replace('[', '').replace(']', '').trim();
-}
-
-
-
-function messageByAuto() {
-
-}
