@@ -7,7 +7,7 @@ module.exports.send = (bot, param) => {
         userID,
         channelID,
         message,
-        evt
+        event
     } = param;
 
     let args = message.substring(2).split(' ');
@@ -33,7 +33,7 @@ module.exports.send = (bot, param) => {
         case 'hi':
             bot.sendMessage({
                 to: channelID,
-                message: `hi ${getAllMentions(evt.d.mentions)}`
+                message: `hi ${getAllMentions(event.d.mentions)}`
             });
             break;
 

@@ -4,10 +4,10 @@ module.exports.send = (bot, param) => {
         userID,
         channelID,
         message,
-        evt
+        event
     } = param;
 
-    if (!randomEvent()) return;
+    if (!randomEvent() || userID === '414702149772247050') return;
 
     if (message.includes('尻槍') || message.includes('打槍')) {
         bot.sendMessage({
@@ -44,7 +44,7 @@ module.exports.send = (bot, param) => {
         });
     }
 
-    if (message.includes('睡')) {
+    if (message.includes('睡') || message.includes('晚安')) {
         bot.sendMessage({
             to: channelID,
             message: '📴 晚ㄤ~ 😴'
@@ -109,5 +109,5 @@ module.exports.send = (bot, param) => {
 }
 
 function randomEvent() {
-    return (Math.floor(Math.random() * 10) + 1) > 4 ? true : false;
+    return (Math.floor(Math.random() * 10) + 1) > 5 ? true : false;
 }
