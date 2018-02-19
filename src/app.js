@@ -4,6 +4,7 @@ import Discord from 'discord.io';
 import logger from 'winston';
 import cmd from './lib/cmd';
 import auto from './lib/auto';
+import greet from './lib/greet';
 
 const prefix = '~!';
 
@@ -21,7 +22,7 @@ const bot = new Discord.Client({
     autorun: true
 });
 
-bot.on('ready', (evt) => {
+bot.on('ready', (event) => {
     logger.info('Connected');
     logger.info('Logged in as: ');
     logger.info(bot.username + ' - (' + bot.id + ')');
@@ -32,18 +33,33 @@ bot.on('ready', (evt) => {
             name: '~! | To use',
         }
     });
+
 });
 
-bot.on('message', (user, userID, channelID, message, evt) => {
+bot.on('presence', (user, userID, status, game, event) => {
 
-    logger.info(`${user}(${userID}): ${message}`);
+    logger.info(`${user}(${userID}): ${status}`);
+
+    const param = {
+        user,
+        userID,
+        status,
+        game,
+        event
+    };
+    greet.send(bot, param);
+});
+
+bot.on('message', (user, userID, channelID, message, event) => {
+
+    logger.info(`${channelID}-${user}(${userID}): ${message}`);
 
     const param = {
         user,
         userID,
         channelID,
         message,
-        evt
+        event
     };
 
     if (message.substring(0, 2) === prefix) {
