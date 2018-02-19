@@ -47,7 +47,7 @@ bot.on('presence', (user, userID, status, game, event) => {
         game,
         event
     };
-    greet.send(bot, param);
+    // greet.send(bot, param);
 });
 
 bot.on('message', (user, userID, channelID, message, event) => {
