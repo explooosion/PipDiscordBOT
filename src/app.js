@@ -6,7 +6,7 @@ import cmd from './lib/cmd';
 import auto from './lib/auto';
 import greet from './lib/greet';
 
-const prefix = '~!';
+const prefix = '!';
 
 // Configure logger settings
 logger.remove(logger.transports.Console);
@@ -30,7 +30,7 @@ bot.on('ready', (event) => {
     bot.setPresence({
         idle_since: Date.now(),
         game: {
-            name: '~! | To use',
+            name: '!help | To use',
         }
     });
 
@@ -62,7 +62,7 @@ bot.on('message', (user, userID, channelID, message, event) => {
         event
     };
 
-    if (message.substring(0, 2) === prefix) {
+    if (message.substring(0, 1) === prefix) {
         cmd.send(bot, param);
     } else {
         auto.send(bot, param);

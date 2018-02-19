@@ -10,7 +10,7 @@ module.exports.send = (bot, param) => {
         event
     } = param;
 
-    let args = message.substring(2).split(' ');
+    let args = message.substring(1).split(' ');
     const cmd = args[0];
 
     args = args.splice(1);
@@ -82,6 +82,9 @@ module.exports.send = (bot, param) => {
                     title: '關於 [PipDiscordBOT](https://github.com/explooosion/PipDiscordBOT) 的資訊',
                     description: 'Hi~ 以下為小妹的基本指令，不可以做色色的事情哦！',
                     fields: [{
+                        name: 'Prefix',
+                        value: '`!` example: `!help',
+                    }, {
                         name: 'Info Commands',
                         value: '`ping` `help` `hi`',
                     }, {
@@ -101,7 +104,7 @@ module.exports.send = (bot, param) => {
                 }
             });
             break;
-            
+
         default:
             break;
     }

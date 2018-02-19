@@ -14,7 +14,7 @@ Chat bot for **Discord bot** .
 [Invite](https://discordapp.com/api/oauth2/authorize?client_id=414702149772247050&permissions=3668032&scope=bot) and you can add PipBot to your own server.
 
 ## Bot prefix
-"~!" (customizable)
+"!" (customizable)
 
 ## Tech Stack
 
