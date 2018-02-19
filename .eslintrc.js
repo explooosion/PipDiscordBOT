@@ -37,5 +37,6 @@ module.exports = {
         "import/first": 0,
         "import/no-unresolved": 0,
         "no-unneeded-ternary": 0,
+        "no-case-declarations": 0,
     }
 };
