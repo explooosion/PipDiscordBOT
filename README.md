@@ -15,7 +15,9 @@ Chat bot for **Discord bot** .
 
 ## Bot prefix
 "!" (customizable)
-
+```bash
+!help
+```
 ## Tech Stack
 
 + [discord.io](https://github.com/izy521/discord.io)
