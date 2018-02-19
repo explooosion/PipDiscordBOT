@@ -51,6 +51,57 @@ module.exports.send = (bot, param) => {
             });
             break;
 
+        case 'map':
+
+            console.log(args);
+            bot.sendMessage({
+                to: channelID,
+                embed: {
+                    color: 0xff00ff,
+                    description: `地圖路線 - [點我](https://www.google.com.tw/maps/search/${args[0]})`,
+                    timestamp: new Date(),
+                    footer: {
+                        text: 'Pip-Bot Team'
+                    }
+                }
+            });
+            break;
+
+        case 'help':
+
+            console.log(param);
+
+            bot.sendMessage({
+                to: channelID,
+                embed: {
+                    color: 0xff00ff,
+                    author: {
+                        name: 'Pip-Bot',
+                        icon_url: 'https://i.imgur.com/RZP1rAx.png',
+                    },
+                    title: '關於 [PipDiscordBOT](https://github.com/explooosion/PipDiscordBOT) 的資訊',
+                    description: 'Hi~ 以下為小妹的基本指令，不可以做色色的事情哦！',
+                    fields: [{
+                        name: 'Info Commands',
+                        value: '`ping` `help` `hi`',
+                    }, {
+                        name: 'Game Commands',
+                        value: '`pubg`',
+                    }, {
+                        name: 'Utility Commands',
+                        value: '`map`',
+                    }, {
+                        name: 'Unknow Commands',
+                        value: '`#0`',
+                    }],
+                    timestamp: new Date(),
+                    footer: {
+                        text: 'Pip-Bot Team'
+                    }
+                }
+            });
+            break;
+            
         default:
             break;
     }
