@@ -16,14 +16,22 @@ module.exports.send = (bot, param) => {
         });
     }
 
-    if (message.includes('餓') || message.includes('想吃') || message.includes('吃啥')) {
+    if (message.includes('餓') || message.includes('想吃') || message.includes('吃啥') || message.includes('消夜') || message.includes('餐')) {
         bot.sendMessage({
             to: channelID,
-            message: '樓上ㄘ我洨喇! 😝'
+            message: '紅燒金目鯛魚 燒烤西京味噌鰆魚 鯛姿蒸 蟹肉奶油可樂餅 牛肉蛋包飯 豬排咖哩飯 蟹肉燴炒飯 焢肉燴飯 烏龍麵 薑汁豬肉片 日式漢堡排 大阪壽司 山藥泥麥飯 燒肉井 美式肋排 中式油淋雞 香蒜牛排 蔥抓餅 泰式辣炒蝦 辣炒花蛤 辣炒花枝 辣炒豬 泰式辣炒蝦 辣炒花蛤 辣炒花枝 辣炒豬 辣炒雞 泰味鳳梨蝦球 香茅辣炒雞肉 肉粽 泰式辣炒海鮮 酸辣叢林燒肉 醉仙牛肉 泰式生菜碎肉 鄉村牛肉 蟳蒸蛋 綜合壽司 綜合生魚片 炸蝦天婦羅 炸豬排 蛋包飯 關東煮 烤香魚 味噌湯 烤味噌魚 海鮮火鍋 和風沙拉 鮭魚飯團 蒜頭蛤湯 酸筍炒豬肉 炸蝦飯 豚天火燒 海老奶油燒 紅酒燉牛肉 干貝起士燒 牛肉奶油燒 牛蘆筍卷燒 鍋貼 鼎邊趖 泡泡冰 天婦羅 營養三明治 豆簽羹 蝦仁肉圓 鐵板燒 紅油抄手 大餅包小餅 刀削麵 豬肝湯 花枝羹 蚵仔煎 藥燉排骨 牛舌餅 新竹肉圓 貢丸 潤餅 蔥花煎餅 魷魚羹 米粉 潤餅 當歸鴨 蚵仔煎 炒花枝 肉羹 米糕 甜不辣 涼圓 大腸麵線 魷魚羹 魚酥羹 麻辣鴨血 麻辣臭豆腐 炸雞排 滷味 炒米粉 鴨肉羹 魯肉飯 排骨飯 煎餃 雞腿飯 臭豆腐 豪大大雞排 花枝羹 豬血糕 雞肉飯 藍藍路 維力雜醬麵 牛肉麵 鴨肉羹 御飯糰 MOS漢堡 肯德基 頂呱呱 丹丹 刺身 涮羊肉 廣東粥 麻辣鍋 雞絲麵 燒餅 油條 薑母鴨 甜不辣 水餃 可麗餅 小籠包 水餃 水煎包 車輪餅 蚵仔煎 炒米粉 炒羊肉 水煎包 車輪餅 蚵仔煎 炒米粉 炒羊肉',
+            embed: {
+                color: 0xffff00,
+                title: '🥖 🧀 🥚 🍳 🥓 🥞 🍤 🍗 🍖 🍕 🌭 🍔 🍟 🥙🌮 🌯 🥗 🥘 🍝',
+                description: '[What Do You Want To Eat?](https://www.google.com.tw/search?q=%E6%B6%88%E5%A4%9C&oq=%E6%B6%88%E5%A4%9C&aqs=chrome..69i57j69i59j0l4.2988j0j7&sourceid=chrome&ie=UTF-8)',
+                image: {
+                    url: 'https://img.appledaily.com.tw/images/ReNews/20171030/640_c6f902162971f542f9b898e95e958113.jpg'
+                },
+            }
         });
     }
 
-    if (message.includes('88') || message.includes('掰') || message.includes('bye')) {
+    if (message.includes('88') || message.includes('掰') || message.includes('bye') || message.includes('88') || message.includes('cu')) {
         bot.sendMessage({
             to: channelID,
             message: '👋🏻👋🏻👋🏻👋🏻👋🏻'
@@ -106,8 +114,72 @@ module.exports.send = (bot, param) => {
             message: '+++++++++++++++++ 👺'
         });
     }
+
+    if (message.includes('...')) {
+        bot.sendMessage({
+            to: channelID,
+            message: '... ? 樓上包莖仔 🤮'
+        });
+    }
+
+    if (message.includes('沒4')) {
+        bot.sendMessage({
+            to: channelID,
+            message: '快滾好咪 🤬'
+        });
+    }
+
+    if (message.includes('72') && !message.includes('@')) {
+        bot.sendMessage({
+            to: channelID,
+            embed: {
+                color: 0xff00ff,
+                title: '',
+                description: '🐧🐧 [https://www.twitch.tv/jinnytty](https://www.twitch.tv/jinnytty) 🐧🐧',
+                image: {
+                    url: 'https://static-cdn.jtvnw.net/jtv_user_pictures/397dc1dfc1a96bb1-profile_image-300x300.png'
+                },
+                timestamp: new Date(),
+                footer: {
+                    text: 'Pip-Bot 74團 皇家禁衛軍'
+                }
+            }
+        });
+    }
+
+    if (message.includes('-.-')) {
+        bot.sendMessage({
+            to: channelID,
+            message: '傻眼🐱'
+        });
+    }
+
+    if (message.includes('87') && !message.includes('@')) {
+        bot.sendMessage({
+            to: channelID,
+            message: 'ㄅEY'
+        });
+    }
+
+    if (message.includes('婆')) {
+        bot.sendMessage({
+            to: channelID,
+            embed: {
+                color: 0x00ffff,
+                title: '這我婆喇！ 沒看過嗎？ 現在給你看！',
+                description: '😍😍 [雞排妹ili鄭家純](https://www.facebook.com/ili19930831official/) 😍😍',
+                image: {
+                    url: 'https://scontent.ftpe7-1.fna.fbcdn.net/v/t1.0-9/28056098_1460659464056932_7419006765228129584_n.jpg?_nc_fx=ftpe7-3&oh=686d93934a8a36cdc860c0e655f0f913&oe=5B177C67'
+                },
+                timestamp: new Date(),
+                footer: {
+                    text: 'Pip-Bot ili團 皇家禁衛軍'
+                }
+            }
+        });
+    }
 }
 
 function randomEvent() {
-    return (Math.floor(Math.random() * 10) + 1) > 5 ? true : false;
+    return (Math.floor(Math.random() * 10) + 1) > 7 ? true : false;
 }
