@@ -178,8 +178,26 @@ module.exports.send = (bot, param) => {
             }
         });
     }
+
+    if (message.includes('海草')) {
+        bot.sendMessage({
+            to: channelID,
+            embed: {
+                color: 0xF58446,
+                title: '*海草舞*',
+                description: '🤸🏻‍ [眾水之音文化傳播有限公司](https://www.youtube.com/watch?v=jq6uEUwkGqc/) 🤸🏻‍',
+                image: {
+                    url: 'https://i.ytimg.com/vi/jq6uEUwkGqc/maxresdefault.jpg'
+                },
+                timestamp: new Date(),
+                footer: {
+                    text: 'Pip-Bot 海草團'
+                }
+            }
+        });
+    }
 }
 
 function randomEvent() {
-    return (Math.floor(Math.random() * 10) + 1) > 7 ? true : false;
+    return (Math.floor(Math.random() * 10) + 1) > 4 ? true : false;
 }
