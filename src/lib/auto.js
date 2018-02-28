@@ -169,6 +169,24 @@ module.exports.send = (bot, param) => {
         });
     }
 
+    if (message.includes('鳳梨')) {
+        bot.sendMessage({
+            to: channelID,
+            embed: {
+                color: 0xff00ff,
+                title: '',
+                description: '🍍🍍 [https://www.twitch.tv/vickypan](https://www.twitch.tv/vickypan) 🍍🍍',
+                image: {
+                    url: 'https://static-cdn.jtvnw.net/jtv_user_pictures/4dab8adf-753e-488f-a7d9-d60f4e426b67-profile_image-300x300.png'
+                },
+                timestamp: new Date(),
+                footer: {
+                    text: 'Pip-Bot 鳳梨團 皇家禁衛軍'
+                }
+            }
+        });
+    }
+
     if (message.includes('-.-')) {
         bot.sendMessage({
             to: channelID,
