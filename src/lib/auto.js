@@ -111,16 +111,38 @@ module.exports.send = (bot, param) => {
     if (message.includes('++')) {
         bot.sendMessage({
             to: channelID,
-            message: '+++++++++++++++++ 👺'
+            message: '+++++++++++++++++'
         });
     }
 
     if (message.includes('...')) {
         bot.sendMessage({
             to: channelID,
-            message: '... ? 樓上包莖仔 🤮'
+            message: '包莖仔點三小 🤮'
         });
     }
+
+    if (message.includes('OK')) {
+        bot.sendMessage({
+            to: channelID,
+            message: 'hen棒'
+        });
+    }
+
+    if (message.includes('ㄌㄐ')) {
+        bot.sendMessage({
+            to: channelID,
+            message: 'B嘴ㄌㄐ'
+        });
+    }
+
+    if (message.includes('低能')) {
+        bot.sendMessage({
+            to: channelID,
+            message: 'D能兒 -.-'
+        });
+    }
+
 
     if (message.includes('沒4')) {
         bot.sendMessage({
@@ -158,6 +180,13 @@ module.exports.send = (bot, param) => {
         bot.sendMessage({
             to: channelID,
             message: 'ㄅEY'
+        });
+    }
+
+    if (message.includes('0.0')) {
+        bot.sendMessage({
+            to: channelID,
+            message: '0.0'
         });
     }
 
