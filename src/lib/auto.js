@@ -187,6 +187,24 @@ module.exports.send = (bot, param) => {
         });
     }
 
+    if (message.includes('蝴蝶')) {
+        bot.sendMessage({
+            to: channelID,
+            embed: {
+                color: 0xDD968C,
+                title: '',
+                description: '🦋🦋 [https://www.twitch.tv/butterflyouo](https://www.twitch.tv/butterflyouo) 🦋🦋',
+                image: {
+                    url: 'https://scontent.ftpe7-1.fna.fbcdn.net/v/t1.0-9/22851673_1967425600191577_6794008167558874724_n.png?_nc_fx=ftpe7-3&oh=eaccd83af2a9912ba04fdd3f6d6f8145&oe=5B10F963'
+                },
+                timestamp: new Date(),
+                footer: {
+                    text: 'Pip-Bot 蝴蝶團 皇家禁衛軍'
+                }
+            }
+        });
+    }
+
     if (message.includes('-.-')) {
         bot.sendMessage({
             to: channelID,
