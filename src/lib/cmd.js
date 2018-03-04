@@ -115,7 +115,6 @@ module.exports.send = async (bot, param) => {
                     return c.name.includes(args)
                 });
                 if (town) {
-                    console.log(town);
                     const url = `https://works.ioa.tw/weather/api/weathers/${town.id}.json`;
                     fetch(url)
                         .then(res => res.json())

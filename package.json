@@ -12,6 +12,7 @@
   "author": "Robby",
   "license": "ISC",
   "dependencies": {
+    "ajax-request": "^1.2.3",
     "discord.io": "github:woor/discord.io#gateway_v6",
     "dotenv": "^5.0.0",
     "node-fetch": "^2.0.0",

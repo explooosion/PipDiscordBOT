@@ -1,3 +1,10 @@
+import fs from 'fs';
+import fetch from 'node-fetch';
+import request from 'ajax-request';
+
+import https from 'https';
+import qs from 'querystring';
+
 module.exports.send = (bot, param) => {
     const {
         user,
@@ -42,13 +49,6 @@ module.exports.send = (bot, param) => {
         bot.sendMessage({
             to: channelID,
             message: '聽到沒! BOSS 森77惹! 😡'
-        });
-    }
-
-    if (message.includes('奶')) {
-        bot.sendMessage({
-            to: channelID,
-            message: '💕有人提到奶子嗎! 😍😍😍'
         });
     }
 
@@ -118,7 +118,7 @@ module.exports.send = (bot, param) => {
     if (message.includes('...')) {
         bot.sendMessage({
             to: channelID,
-            message: '包莖仔點三小 🤮'
+            message: '😨'
         });
     }
 
@@ -132,7 +132,7 @@ module.exports.send = (bot, param) => {
     if (message.includes('ㄌㄐ')) {
         bot.sendMessage({
             to: channelID,
-            message: 'B嘴ㄌㄐ'
+            message: 'B嘴 包莖仔🤮'
         });
     }
 
@@ -261,8 +261,67 @@ module.exports.send = (bot, param) => {
             }
         });
     }
+
+    if (message.includes('777')) {
+        bot.sendMessage({
+            to: channelID,
+            message: '77777777777777777'
+        });
+    }
+
+    if (message.includes('女乃') || message.includes('豆頁') || message.includes('奶') || message.includes('胸') || message.includes('ㄋㄟ') || message.includes('乳')) {
+
+        let url = require('../api/img/data.json');
+        let img;
+        while (img === undefined) {
+            img = url.data[randomImage()].image_url;
+        }
+        console.log(img)
+        bot.sendMessage({
+            to: channelID,
+            embed: {
+                color: 0xFF58ED,
+                title: '奶子日報',
+                description: '😊 每日新鮮奶子來惹 😊',
+                image: {
+                    url: img
+                },
+                timestamp: new Date(),
+                footer: {
+                    text: 'Pip-Bot 奶圖王'
+                }
+            }
+        });
+
+        // url = 'http://image.baidu.com/channel/listjson?pn=0&rn=30&tag1=美女&w=胸&ie=utf8';
+        // fetch(url)
+        //     .then(res => res.json())
+        //     .then(json => {
+        //         // const img = json.data;
+        //         // bot.sendMessage({
+        //         //     to: channelID,
+        //         //     embed: {
+        //         //         color: 0xFF58ED,
+        //         //         title: '奶子日報',
+        //         //         description: '😍 每日新鮮奶子來惹 😍',
+        //         //         image: {
+        //         //             url: img
+        //         //         },
+        //         //         timestamp: new Date(),
+        //         //         footer: {
+        //         //             text: 'Pip-Bot 奶圖王'
+        //         //         }
+        //         //     }
+        //         // });
+        //         console.log(json.data);
+        //     });
+    }
 }
 
 function randomEvent() {
-    return (Math.floor(Math.random() * 10) + 1) > 4 ? true : false;
+    return (Math.floor(Math.random() * 10) + 1) > 0 ? true : false;
+}
+
+function randomImage() {
+    return (Math.floor(Math.random() * 100) + 1);
 }
