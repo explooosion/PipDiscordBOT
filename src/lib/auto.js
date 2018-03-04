@@ -319,7 +319,7 @@ module.exports.send = (bot, param) => {
 }
 
 function randomEvent() {
-    return (Math.floor(Math.random() * 10) + 1) > 0 ? true : false;
+    return (Math.floor(Math.random() * 10) + 1) > 4 ? true : false;
 }
 
 function randomImage() {
