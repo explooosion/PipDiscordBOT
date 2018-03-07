@@ -7,7 +7,7 @@ import qs from 'querystring';
 
 import url from '../../api/img/data.json';
 
-const twich = (bot, param) => {
+const images = (bot, param) => {
 
     const {
         user,
@@ -98,4 +98,4 @@ function randomImage() {
     return (Math.floor(Math.random() * 100) + 1);
 }
 
-export default twich
+export default images
