@@ -141,12 +141,12 @@ const words = (bot, param) => {
         });
     }
 
-    if (message.includes('87') && !message.includes('@')) {
-        bot.sendMessage({
-            to: channelID,
-            message: 'ㄅEY'
-        });
-    }
+    // if (message.includes('87') && !message.includes('@')) {
+    //     bot.sendMessage({
+    //         to: channelID,
+    //         message: 'ㄅEY'
+    //     });
+    // }
 
     if (message.includes('0.0')) {
         bot.sendMessage({
