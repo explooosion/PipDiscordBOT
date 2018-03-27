@@ -33,6 +33,7 @@ const images = (bot, param) => {
                 }
             }
         });
+        return
     }
 
     if (message.includes('海草')) {
@@ -51,10 +52,10 @@ const images = (bot, param) => {
                 }
             }
         });
+        return
     }
 
     if (message.includes('女乃') || message.includes('豆頁') || message.includes('奶') || message.includes('胸') || message.includes('ㄋㄟ') || message.includes('乳')) {
-
         let img;
         while (img === undefined) {
             img = url.data[randomImage()].image_url;
@@ -75,6 +76,7 @@ const images = (bot, param) => {
                 }
             }
         });
+        return
     }
 
     if (message.includes('餓') || message.includes('想吃') || message.includes('吃啥') || message.includes('消夜') || message.includes('餐')) {

@@ -31,6 +31,7 @@ const twich = (bot, param) => {
                 }
             }
         });
+        return
     }
 
     if (message.includes('鳳梨')) {
@@ -49,6 +50,7 @@ const twich = (bot, param) => {
                 }
             }
         });
+        return
     }
 
     if (message.includes('蝴蝶')) {

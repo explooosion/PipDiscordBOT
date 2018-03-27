@@ -20,6 +20,7 @@ const words = (bot, param) => {
             to: channelID,
             message: '請克制一點! 少量一點! 👉👌'
         });
+        return
     }
 
     if (message.includes('88') || message.includes('掰') || message.includes('bye') || message.includes('88') || message.includes('cu')) {
@@ -27,6 +28,7 @@ const words = (bot, param) => {
             to: channelID,
             message: '👋🏻👋🏻👋🏻👋🏻👋🏻'
         });
+        return
     }
 
     if (message.includes('下去')) {
@@ -34,6 +36,7 @@ const words = (bot, param) => {
             to: channelID,
             message: '聽到沒! BOSS 森77惹! 😡'
         });
+        return
     }
 
     if (message.includes('睡') || message.includes('晚安')) {
@@ -41,6 +44,7 @@ const words = (bot, param) => {
             to: channelID,
             message: '📴 晚ㄤ~ 😴'
         });
+        return
     }
 
     if (message.includes('洗澡')) {
@@ -48,6 +52,7 @@ const words = (bot, param) => {
             to: channelID,
             message: '桑幾咧 🚿 🛁 🛀'
         });
+        return
     }
 
     if (message.includes('三小')) {
@@ -55,6 +60,7 @@ const words = (bot, param) => {
             to: channelID,
             message: '工三小 🤬'
         });
+        return
     }
 
     if (message.includes('失敗')) {
@@ -62,6 +68,7 @@ const words = (bot, param) => {
             to: channelID,
             message: 'GG 下次再來 👎'
         });
+        return
     }
 
     if (message.includes('電話')) {
@@ -69,6 +76,7 @@ const words = (bot, param) => {
             to: channelID,
             message: '說好的打給我呢? 📳'
         });
+        return
     }
 
     if (message.includes('GG') || message.includes('gg')) {
@@ -76,6 +84,7 @@ const words = (bot, param) => {
             to: channelID,
             message: 'GGGGGGGGG 😎'
         });
+        return
     }
 
     if (message.includes('上車')) {
@@ -83,6 +92,7 @@ const words = (bot, param) => {
             to: channelID,
             message: '老實點! 每次掃黃都是你! 👮'
         });
+        return
     }
 
     if (message.includes('-1') || message.includes('-2')) {
@@ -90,6 +100,7 @@ const words = (bot, param) => {
             to: channelID,
             message: '快點就缺你了 😲'
         });
+        return
     }
 
     if (message.includes('++')) {
@@ -97,6 +108,7 @@ const words = (bot, param) => {
             to: channelID,
             message: '+1'
         });
+        return
     }
 
     if (message.includes('...')) {
@@ -104,6 +116,7 @@ const words = (bot, param) => {
             to: channelID,
             message: '😨'
         });
+        return
     }
 
     if (message.includes('OK')) {
@@ -111,6 +124,7 @@ const words = (bot, param) => {
             to: channelID,
             message: 'hen棒'
         });
+        return
     }
 
     if (message.includes('ㄌㄐ')) {
@@ -118,6 +132,7 @@ const words = (bot, param) => {
             to: channelID,
             message: 'B嘴 包莖仔🤮'
         });
+        return
     }
 
     if (message.includes('低能')) {
@@ -125,6 +140,7 @@ const words = (bot, param) => {
             to: channelID,
             message: 'D能兒 -.-'
         });
+        return
     }
 
     if (message.includes('沒4')) {
@@ -132,6 +148,7 @@ const words = (bot, param) => {
             to: channelID,
             message: '快滾好咪 🤬'
         });
+        return
     }
 
     if (message.includes('-.-')) {
@@ -139,6 +156,7 @@ const words = (bot, param) => {
             to: channelID,
             message: '傻眼🐱'
         });
+        return
     }
 
     // if (message.includes('87') && !message.includes('@')) {
@@ -153,6 +171,7 @@ const words = (bot, param) => {
             to: channelID,
             message: '0.0'
         });
+        return
     }
 
     if (message.includes('777')) {
