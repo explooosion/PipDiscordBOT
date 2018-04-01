@@ -18,14 +18,28 @@ const images = (bot, param) => {
     } = param;
 
     if (message.includes('婆')) {
+
+        const id = Math.floor(Math.random() * 30);
+
+        const check = userID === '213277061555421185' ? true : false
+        // console.log(`../../img/ili/ili19930831official/${id}.jpg`)
+
+        let msg = ''
+        if (check) {
+            msg = `身分驗證正確 <@${userID}>！`
+        } else {
+            msg = `才不是ㄋ老婆, B嘴 <@${userID}>, 就給ㄋ看看ㄅ`
+        }
+
         bot.sendMessage({
             to: channelID,
+            message: msg,
             embed: {
                 color: 0x00ffff,
-                title: '這我婆喇！ 沒看過嗎？ 現在給你看！',
+                title: '這4 <@213277061555421185> 喇！ 沒看過嗎？ 現在給你看！ 😘 (照片每次都不一樣哦)',
                 description: '😍😍 [雞排妹ili鄭家純](https://www.facebook.com/ili19930831official/) 😍😍',
                 image: {
-                    url: 'https://scontent.ftpe7-1.fna.fbcdn.net/v/t1.0-9/28056098_1460659464056932_7419006765228129584_n.jpg?_nc_fx=ftpe7-3&oh=686d93934a8a36cdc860c0e655f0f913&oe=5B177C67'
+                    url: `https://raw.githubusercontent.com/explooosion/PipDiscordBOT/master/src/api/img/ili19930831official/${id}.jpg`
                 },
                 timestamp: new Date(),
                 footer: {
