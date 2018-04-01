@@ -19,6 +19,8 @@ const images = (bot, param) => {
 
     if (message.includes('婆')) {
 
+        if (userID === '414702149772247050') return;
+
         const id = Math.floor(Math.random() * 30);
 
         const check = userID === '213277061555421185' ? true : false
@@ -36,7 +38,7 @@ const images = (bot, param) => {
             message: msg,
             embed: {
                 color: 0x00ffff,
-                title: '這4 <@213277061555421185> 喇！ 沒看過嗎？ 現在給你看！ 😘 (照片每次都不一樣哦)',
+                title: '這4 Robby 喇！ 沒看過嗎？ 現在給你看！ 😘 (照片每次都不一樣哦)',
                 description: '😍😍 [雞排妹ili鄭家純](https://www.facebook.com/ili19930831official/) 😍😍',
                 image: {
                     url: `https://raw.githubusercontent.com/explooosion/PipDiscordBOT/master/src/api/img/ili19930831official/${id}.jpg`
