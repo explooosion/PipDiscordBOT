@@ -19,7 +19,7 @@ const images = (bot, param) => {
 
     if (message.includes('婆')) {
 
-        if (userID === '414702149772247050') return;
+        if (userID === '414702149772247050' || userID === '424961764376051732') return;
 
         const id = Math.floor(Math.random() * 30);
 
