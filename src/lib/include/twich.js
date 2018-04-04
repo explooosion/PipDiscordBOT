@@ -70,6 +70,60 @@ const twich = (bot, param) => {
             }
         });
     }
+
+    if (message.includes('小雲')) {
+        bot.sendMessage({
+            to: channelID,
+            embed: {
+                color: 0xFFC766,
+                title: '',
+                description: '⛅️️☁️ [https://www.twitch.tv/babybaby1111](https://www.twitch.tv/babybaby1111) ☁️⛅️',
+                image: {
+                    url: 'https://static-cdn.jtvnw.net/jtv_user_pictures/582d325c08881fd1-profile_image-300x300.jpeg'
+                },
+                timestamp: new Date(),
+                footer: {
+                    text: 'Pip-Bot 寶寶團 開水自衛隊'
+                }
+            }
+        });
+    }
+
+    if (message.includes('妮妮')) {
+        bot.sendMessage({
+            to: channelID,
+            embed: {
+                color: 0xFE659B,
+                title: '',
+                description: '👼🏼👼🏼 [https://www.twitch.tv/niniko_w](https://www.twitch.tv/niniko_w) 👼🏼👼🏼',
+                image: {
+                    url: 'https://static-cdn.jtvnw.net/jtv_user_pictures/niniko_w-profile_image-58966583229acfef-300x300.jpeg'
+                },
+                timestamp: new Date(),
+                footer: {
+                    text: 'Pip-Bot ㄋㄋ團 皇家禁衛軍'
+                }
+            }
+        });
+    }
+
+    if (message.includes('JJ') || message.includes('jj') || message.includes('接接') || message.includes('godjj') || message.includes('GodJJ')) {
+        bot.sendMessage({
+            to: channelID,
+            embed: {
+                color: 0x30FE42,
+                title: '',
+                description: '🔰🔰 [https://www.twitch.tv/godjj](https://www.twitch.tv/godjj) 🔰🔰',
+                image: {
+                    url: 'http://i.imgur.com/CCrTc5s.png'
+                },
+                timestamp: new Date(),
+                footer: {
+                    text: 'Pip-Bot JJ團 朝聖團'
+                }
+            }
+        });
+    }
 }
 
 export default twich
