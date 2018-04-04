@@ -124,6 +124,24 @@ const twich = (bot, param) => {
             }
         });
     }
+
+    if (message.includes('cam') || message.includes('CAM') || message.includes('1111')) {
+        bot.sendMessage({
+            to: channelID,
+            embed: {
+                color: 0xB72FFF,
+                title: '',
+                description: '🔫🔫 [https://www.twitch.tv/cam11111111](https://www.twitch.tv/cam11111111) ⚔️⚔️',
+                image: {
+                    url: 'https://scontent-tpe1-1.xx.fbcdn.net/v/t1.0-9/29683313_645501919115121_1645961224508445359_n.jpg?_nc_cat=0&oh=609d752d4f82ac3ba7150add45729a33&oe=5B30F939'
+                },
+                timestamp: new Date(),
+                footer: {
+                    text: 'Pip-Bot CAM 111111 槍槍團'
+                }
+            }
+        });
+    }
 }
 
 export default twich
